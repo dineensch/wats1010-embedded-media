@@ -5,6 +5,312 @@
  * Site Styles
  *****************************************************************************/
 
- html {
-     color: green;
- }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: #463e3e;
+  font-family: Arial;
+}
+
+h2 {
+  width: 100%;
+  color: #463e3e;
+  padding: 80px 0 10px 0;
+  margin: 10px 0 5px 0;
+  text-align: center;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/************************************** PAGE HEADER ****************************************/
+
+div.header {
+  display: table;
+  color: #463e3e;
+  font-family: arial;
+  width: 100%;
+  margin: 0;
+  padding: 15px 15px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+div.header-title {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+}
+
+.header-title h1 {
+  font-size: 60px;
+  font-family: Trebuchet MS
+}
+
+.header-title p {
+  font-size: 16px;
+}
+
+/************************************** NAV BAR ****************************************/
+
+nav.main-nav {
+  display: table-cell;
+  width: 50%;
+  text-align: right;
+  vertical-align: middle;
+}
+
+div.nav-wrapper {
+  display: block;
+  text-align: right;
+  vertical-align: middle;
+}
+
+ul.main-nav-links {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.main-nav-links li {
+  display: inline-block;
+  text-align: right;
+  margin: 0 30px 0 0;
+}
+
+.main-nav-links a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: #463e3e;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 3px 0;
+}
+
+.main-nav-links a:hover {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: #463e3e;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-top: 2px solid #707070;
+  border-bottom: 2px solid #707070;
+  padding: 1px 0;
+}
+
+.main-nav-links:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/************************************** VIDEO LOOP ****************************************/
+
+div.videoloop-top {
+  margin: 0 0 100px 0;
+  padding: 0;
+  height: 600px;
+}
+
+#videoloop {
+  object-fit: initial;
+  width: 100%;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  float: top;
+}
+
+/************************************** SOCIAL LINKS SIDEBAR ****************************************/
+
+aside#social {
+  font-family: arial;
+  position: fixed;
+  right: 1px;
+  width: 150px;
+  transition: width 0.8s;
+  opacity: 0.7;
+  z-index: 100;
+}
+
+aside#social:hover {
+  opacity: 1.0;
+  width: 250px;
+}
+
+#social h3 {
+  text-align: center;
+  padding: 4px 0;
+  background-color: #89aa72;
+  color: white;
+}
+
+ul.social-links {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #bad3ab;
+}
+
+.social-links li {
+  list-style-type: none;
+}
+
+.social-links a {
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+
+.social-links a:hover {
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  background-color: #9dba89;
+}
+
+/************************************** WATCH SECTION ****************************************/
+
+.video video {
+  width: 600px;
+  height: auto;
+}
+
+/************************************** LISTEN SECTION ****************************************/
+
+.audio-img img {
+  width: 600px;
+  height: 200px;
+}
+
+.audio audio {
+  width: 600px;
+  height: auto;
+}
+
+/************************************** DOWNLOAD BUTTONS ****************************************/
+
+div.download-container {
+  display: table;
+  width: 600px;
+  padding: 0;
+  margin: auto;
+  background-color: #dbdbdb;
+}
+
+.download-container p{
+  display: table-cell;
+  font-size: 20px;
+  text-align: left;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+
+img.download-btn {
+  padding: 3px;
+  margin: 0;
+  vertical-align: middle;
+  height: 25px;
+  width: auto;
+}
+
+/************************************** ABOUT SECTION ****************************************/
+
+p.lead {
+  width: 300px;
+  margin: auto;
+  line-height: 1.3;
+  font-family: Trebuchet MS;
+}
+
+div.weybec-container {
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img.headshot {
+  height: 300px;
+  width: auto;
+}
+
+section>p {
+  width: 70%;
+  margin: auto;
+}
+
+p>a {
+  text-decoration: none;
+  color: #463e3e;
+  font-weight: 600;
+}
+
+p>a:hover {
+  text-decoration: none;
+  color: #463e3e;
+  font-style: italic;
+  font-weight: 600;
+}
+
+/************************************** FOOTER ****************************************/
+
+div.footer {
+  display: table;
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 20px 15px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  background-color: #463e3e;
+}
+
+div.footer-notes {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-notes p {
+  font-size: 12px;
+}
+
+a.top-of-page {
+  margin-right: 25px;
+  font-size: 14px;
+}
+
+a.top-of-page:hover {
+  margin-right: 25px;
+  font-size: 14px;
+}
+
+#footer-text a {
+  color: white;
+}
+
+#footer-text a:hover {
+  color: white;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
